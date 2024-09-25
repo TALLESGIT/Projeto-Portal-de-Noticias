@@ -1,0 +1,16 @@
+/* nesting css */
+div:nth-child(2) {
+	margin-inline: auto;
+}
+
+div:nth-child(3) {
+	justify-self: end;
+}
+
+.grid-cols-2 {
+	grid-template-columns: 1fr 1fr;
+}
+
+.gap-16 {
+	gap: 16px;
+}
