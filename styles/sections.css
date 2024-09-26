@@ -21,6 +21,8 @@ section header {
 }
 
 #featured {
+	grid-area: featured;
+
 	img {
 		height: 100%;
 		object-fit: cover;
@@ -56,9 +58,11 @@ section header {
 }
 
 #weekly {
+	grid-area: weekly;
+
 	& > div {
 		grid-template-columns: repeat(4, 292px);
-		margin: 0 30px;
+		justify-content: space-between;
 	}
 
 	img {
@@ -78,5 +82,44 @@ section header {
 			margin-top: 8px;
 			font-weight: 800;
 		}
+	}
+}
+
+#ia {
+	grid-area: ia;
+
+	h3 {
+		font-weight: 800;
+		margin-block: 8px 4px;
+	}
+
+	p {
+		font-size: var(--text-sm);
+		color: var(--text-color-secondary, #cbd5e1);
+	}
+
+	img {
+		width: 176px;
+	}
+}
+
+#aside {
+	grid-area: aside;
+}
+
+#ads {
+	height: 280px;
+}
+
+#more {
+	margin-top: 32px;
+
+	h3 {
+		margin-top: 8px;
+	}
+	img {
+		width: 72px;
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
 	}
 }
